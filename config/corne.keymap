@@ -34,10 +34,10 @@
 //                    |      |       |     |   |  |     |     |
                         label = "Lower";
                         bindings = <
- &trans  &kp END      &kp PG_DN    &kp PG_UP    &kp HOME        &trans    &trans  &kp UNDER    &kp LBKT  &kp RBKT  &kp EQUAL  &trans
- &trans  &kp LEFT     &kp DOWN     &bt UP       &kp RIGHT       &trans   &trans  &kp MINUS    &kp LPAR  &kp RPAR  &kp GRAVE  &trans
- &trans  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR   &trans  &kp KP_PLUS  &kp LBRC  &kp RBRC  &kp BSLH   &trans
-                                   &trans       &trans       &trans      &trans  &trans       &trans
+ &trans  &kp END      &kp PG_DN    &kp PG_UP    &kp HOME     &trans        &trans  &kp UNDER    &kp LBKT  &kp RBKT  &kp EQUAL  &trans
+ &trans  &kp LEFT     &kp DOWN     &kp UP       &kp RIGHT    &trans        &trans  &kp MINUS    &kp LPAR  &kp RPAR  &kp GRAVE  &trans
+ &trans  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR    &trans  &kp KP_PLUS  &kp LBRC  &kp RBRC  &kp BSLH   &trans
+                                   &trans       &trans       &trans        &trans  &trans       &trans
                         >;
                 };
 
