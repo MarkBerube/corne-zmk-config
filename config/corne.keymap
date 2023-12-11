@@ -15,7 +15,7 @@
                     compatible = "zmk,behavior-tap-dance";
                     #binding-cells = <0>;
                     tapping-term-ms = <200>;
-                    bindings = <&mo 2>, <&tog 2>;
+                    bindings = <&mo 2>, <&tog 2>, <&kp ESC>;
                 };
         };
 
@@ -38,31 +38,31 @@
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// |  |  END   | PGDN | PGUP | HOME  |     |   |  |  _  |  [  |  ]  |  =  |  |
+// |  |  APP   | PGDN | PGUP | HOME  |     |   |  |  _  |  [  |  ]  |  ~  |  |
 // |  |  LEFT  | DOWN | UP   | RIGHT |     |   |  |  -  |  (  |  )  |  `  |  |
-// |  |  BT1   | BT2  | BT3  | BT4   | BTC |   |  |  +  |  {  |  }  |  \  |  |
+// |  |  BT1   | BT2  | BT3  | BT4   | BTC |   |  |     |  {  |  }  |  \  |  |
 //                    |      |       |     |   |  |     |     |
                         label = "Lower";
                         bindings = <
- &trans  &kp END      &kp PG_DN    &kp PG_UP    &kp HOME     &trans        &trans  &kp UNDER    &kp LBKT  &kp RBKT  &kp EQUAL  &trans
+ &trans  &kp K_APP    &kp PG_DN    &kp PG_UP    &kp HOME     &trans        &trans  &kp UNDER    &kp LBKT  &kp RBKT  &kp TILDE  &trans
  &trans  &kp LEFT     &kp DOWN     &kp UP       &kp RIGHT    &trans        &trans  &kp MINUS    &kp LPAR  &kp RPAR  &kp GRAVE  &trans
- &trans  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR    &trans  &kp KP_PLUS  &kp LBRC  &kp RBRC  &kp BSLH   &trans
+ &trans  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR    &trans  &trans       &kp LBRC  &kp RBRC  &kp BSLH   &trans
                                    &trans       &trans       &trans        &trans  &trans       &trans
                         >;
                 };
 
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// |  |  END   | PGDN | PGUP | HOME  | NumLock  |   |  |  7  |  8  |  9  |  |  |
-// |  |  LEFT  | DOWN | UP   | RIGHT |          |   |  |  4  |  5  |  6  |  |  |
-// |  |  BT1   | BT2  | BT3  | BT4   | BT Clear |   |  |  1  |  2  |  3  |  |  |
-//                    |      |       |          |   |  |  0  |  .  |
+// |  | ^ | * | + | =  | NUMLOCK |   |  |  7  |  8  |  9  |  |  |
+// |  | & | $ | % | ! |          |   |  |  4  |  5  |  6  |  |  |
+// |  |   | | | @ | # |          |   |  |  1  |  2  |  3  |  |  |
+//        |   |   |   |          |   |  |     |     |
                         label = "Raise";
                         bindings = <
-   &trans    &kp CARET &kp STAR   &kp STAR  &trans   &trans   &trans &kp KP_N7 &kp KP_N8 &kp KP_N9 &trans &trans
-   &kp LCTRL &kp AMPS  &kp DLLR   &kp PRCNT &kp SQT  &trans   &trans &kp KP_N4 &kp KP_N5 &kp KP_N6 &trans &trans
-   &kp LSHFT &trans    &kp EXCL   &kp AT    &kp HASH &trans   &trans &kp KP_N1 &kp KP_N2 &kp KP_N3 &trans &trans
-                    	          &trans    &trans   &tog2    &tog 2 &kp KP_N0 &kp KP_DOT
+   &trans    &kp CARET &kp STAR    &kp KP_PLUS &kp EQUAL  &kp KP_NUM   &trans &kp KP_N7 &kp KP_N8 &kp KP_N9 &trans &trans
+   &kp LCTRL &kp AMPS  &kp DLLR    &kp PRCNT   &kp EXCL   &trans       &trans &kp KP_N4 &kp KP_N5 &kp KP_N6 &trans &trans
+   &kp LSHFT &trans    &kp PIPE    &kp AT      &kp HASH   &trans       &trans &kp KP_N1 &kp KP_N2 &kp KP_N3 &trans &trans
+                    	           &trans      &trans     &tog2        &tog 2 &kp KP_N0 &kp KP_DOT
                         >;
                 };
         };
