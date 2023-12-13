@@ -17,9 +17,10 @@
                     tapping-term-ms = <200>;
                     bindings = <&mo 2>, <&tog 2>, <&kp ESC>;
                 };
-                &mt {
-                    tapping-term-ms = <600>;
-                };
+        };
+
+        &mt {
+                tapping-term-ms = <600>;
         };
 
         keymap {
