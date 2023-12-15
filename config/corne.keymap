@@ -43,13 +43,13 @@
                 lower_layer {
 // -----------------------------------------------------------------------------------------
 // |  |  APP   | PGDN | PGUP | HOME  |     |   |  |  _  |  [  |  ]  |  ~  |  |
-// |  |  LEFT  | DOWN | UP   | RIGHT |     |   |  |  -  |  (  |  )  |  `  |  |
+// |  |  LEFT  | DOWN | UP   | RIGHT | ESC |   |  |  -  |  (  |  )  |  `  |  |
 // |  |  BT1   | BT2  | BT3  | BT4   | BTC |   |  |     |  {  |  }  |  \  |  |
 //                    |      |       |     |   |  |     |     |
                         label = "Lower";
                         bindings = <
  &trans  &kp K_APP    &kp PG_DN    &kp PG_UP    &kp HOME     &trans        &trans  &kp UNDER    &kp LBKT  &kp RBKT  &kp TILDE  &trans
- &trans  &kp LEFT     &kp DOWN     &kp UP       &kp RIGHT    &trans        &trans  &kp MINUS    &kp LPAR  &kp RPAR  &kp GRAVE  &trans
+ &trans  &kp LEFT     &kp DOWN     &kp UP       &kp RIGHT    &kp ESC       &trans  &kp MINUS    &kp LPAR  &kp RPAR  &kp GRAVE  &trans
  &trans  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR    &trans  &trans       &kp LBRC  &kp RBRC  &kp BSLH   &trans
                                    &trans       &trans       &trans        &trans  &trans       &trans
                         >;
