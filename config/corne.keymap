@@ -69,7 +69,7 @@
 //        |   |   |   |          |   |    |     |     |
                         label = "Numpad";
                         bindings = <
-   &trans    &kp CARET &kp STAR    &kp KP_PLUS &kp EQUAL  &kp KP_NUM   &kp F3 &kp KP_N7 &kp KP_N8 &kp KP_N9 &trans &trans
+   &trans    &kp CARET &kp STAR    &kp KP_PLUS &kp EQUAL  &kp KP_NUM   &kp F1 &kp KP_N7 &kp KP_N8 &kp KP_N9 &trans &trans
    &kp LCTRL &kp AMPS  &kp DLLR    &kp AT      &kp EXCL   &trans       &kp F2 &kp KP_N4 &kp KP_N5 &kp KP_N6 &trans &trans
    &kp LSHFT &trans    &kp PIPE    &kp PRCNT   &kp HASH   &trans       &kp F3 &kp KP_N1 &kp KP_N2 &kp KP_N3 &trans &trans
                     	           &trans      &trans     &tog 2       &tog 2 &kp KP_N0 &kp KP_DOT
